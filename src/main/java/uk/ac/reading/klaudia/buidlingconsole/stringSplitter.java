@@ -1,9 +1,11 @@
 /**
  * 
  */
-package uk.ac.reading.cs2ja16.klaudia.week2;
+package uk.ac.reading.klaudia.buidlingconsole;
 
 import java.util.Arrays;
+
+
 
 /**
  * @author klaud
@@ -75,25 +77,24 @@ private String[] manyStrings;
     	for (int ct=0; ct<numElement(); ct++) res = res + getNth(ct, "") + "\t";
     	return res;
     }
-    
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// main function to test class
-				stringSplitter ME = new stringSplitter("2 5 6 9", " ");		// create example
-				System.out.println(ME.toString());
+		stringSplitter ME = new stringSplitter("2 5 6 9", " ");		// create example
+		System.out.println(ME.toString());
 
-				String[] temp = ME.getStrings();			// get a copy of the strings
-				
-				for (int ct=0; ct<temp.length; ct++) System.out.print(temp[ct] + "\t");
-				System.out.println();
+		String[] temp = ME.getStrings();			// get a copy of the strings
+		
+		for (int ct=0; ct<temp.length; ct++) System.out.print(temp[ct] + "\t");
+		System.out.println();
 
-				temp[0] = "fred";			// change the copy of the first element
-				
-				for (int ct=0; ct<temp.length; ct++) System.out.print(temp[ct] + "\t");
-				System.out.println();
+		temp[0] = "fred";			// change the copy of the first element
+		
+		for (int ct=0; ct<temp.length; ct++) System.out.print(temp[ct] + "\t");
+		System.out.println();
 
-				System.out.println(ME.toString());
-			}
+		System.out.println(ME.toString());
+	}
 	}
 
 

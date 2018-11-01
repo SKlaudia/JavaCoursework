@@ -95,10 +95,7 @@ public void doDisplay(){
 	*/
 	Person a = new Person();
 	
-	System.out.print(a.getX());
-	System.out.print("\n");
-	System.out.print(a.getY());
-	System.out.print("\n");
+
 	
 	display = new char[ySize][xSize];
 	Map<Point,String> wallsOfRooms = new HashMap<>();
