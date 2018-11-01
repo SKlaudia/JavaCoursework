@@ -15,6 +15,7 @@ import java.util.Scanner;
  * @author klaud
  */
 public class Room_main {
+
     private Point topLeftCorner, bottomRightCorner, doorPosition;
 
 
@@ -71,6 +72,14 @@ public class Room_main {
         //room.isInRoom(Integer.parseInt(System.console().readLine()), Integer.parseInt(System.console().readLine()));
         room.isInRoom(7, 9);
 
+    }
+
+    public Point getTopLeftCorner() {
+        return topLeftCorner;
+    }
+
+    public Point getBottomRightCorner() {
+        return bottomRightCorner;
     }
 
 

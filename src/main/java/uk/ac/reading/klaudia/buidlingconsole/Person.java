@@ -11,15 +11,9 @@ import java.util.Random;
  *
  */
 public class Person {
-	
-private Point position;
-private int positionX;
+
+	private int positionX;
 private int positionY;
-public int[] coordinates;
-int val;
-	/**
-	 * @param args
-	 */
 
 //Person (String inputCoordinates){
 	/*stringSplitter splitCoord = new stringSplitter(inputCoordinates, " ");
