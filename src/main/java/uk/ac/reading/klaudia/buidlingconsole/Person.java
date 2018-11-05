@@ -15,18 +15,6 @@ public class Person {
 	private int positionX;
 private int positionY;
 
-//Person (String inputCoordinates){
-	/*stringSplitter splitCoord = new stringSplitter(inputCoordinates, " ");
-	inputCoordinates = Integer.parseInt(splitCoord.getIntegers());
-	position = new Point((inputCoord[0]), inputCoord[1]);
-	positionX = position.x;
-	positionY = position.y;*/
-	
-	//String[] splitCoord = inputCoordinates.split(" ");
-	//this.positionX = Integer.parseInt(splitCoord[0]);
-	//this.positionY = Integer.parseInt(splitCoord[1]);
-//} 
-
 
 Person (){
 	Random randGem;
@@ -34,6 +22,8 @@ Person (){
 	positionX = randGem.nextInt(5) + 2;
 	positionY = randGem.nextInt(5) + 2;
 }
+
+Person (int maxX)
 public int getX() {
 	return positionX;
 }

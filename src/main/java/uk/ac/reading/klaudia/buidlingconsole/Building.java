@@ -13,7 +13,7 @@ public class Building {
 
     private int xSize;
     private int ySize;
-    private List<Room_main> allRooms;
+    private List<Room> allRooms;
     private static char[][] display;
 
     Building(String inputString) {
@@ -29,7 +29,7 @@ public class Building {
         this.ySize = Integer.parseInt(roomsAsString[0].split(" ")[1]);
 
         for (int i = 1; i < roomsAsString.length; i++) {
-            this.allRooms.add(new Room_main(roomsAsString[i]));
+            this.allRooms.add(new Room(roomsAsString[i]));
 
         }
 
@@ -49,8 +49,8 @@ public class Building {
                 + "Rooms:" + allRooms;
     }
 
-    public Room_main whichRoom(Person person) {
-        for (Room_main room : allRooms) {
+    public Room whichRoom(Person person) {
+        for (Room room : allRooms) {
             if ((person.getX() > room.getTopLeftCorner().x) &&
                     (person.getX() < room.getBottomRightCorner().x) &&
                     (person.getY() < room.getTopLeftCorner().y) &&
@@ -69,7 +69,7 @@ public class Building {
 
         Map<Point, String> wallsOfRooms = new HashMap<>();
 
-        for (Room_main room : allRooms) {
+        for (Room room : allRooms) {
             wallsOfRooms.putAll(room.showRoom());
         }
 
